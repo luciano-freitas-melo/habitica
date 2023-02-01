@@ -26,7 +26,7 @@ describe('contador de tarefas criadas', () => {
   });
 
   it('deveria acrescentar mais 1 na contagem do todo retornando 1', () => {
-    expect(addTaskTotal('habit')).to.equal(1);
+    expect(addTaskTotal('todo')).to.equal(1);
   });
 
   it('deveria fazer a contagem do todo retornando 2, pois já foi chamado duas vezes', () => {
@@ -35,5 +35,9 @@ describe('contador de tarefas criadas', () => {
 
   it('deveria retorna -1, pois essa entrada não é válida', () => {
     expect(addTaskTotal('ABC')).to.equal(-1);
+  });
+
+  it('deveria retorna -1, pois essa entrada não é válida', () => {
+    expect(addTaskTotal(123)).to.equal(-1);
   });
 });
