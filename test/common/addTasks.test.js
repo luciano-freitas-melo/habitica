@@ -12,4 +12,16 @@ describe('contador de tarefas criadas', () => {
   it('deveria fazer a contagem do habit retornando 2, pois já foi chamado duas vezes', () => {
     expect(addTaskTotal('habit')).to.equal(2);
   });
+
+  it('deveria acrescentar mais 1 na contagem da daily retornando 1', () => {
+    expect(addTaskTotal('daily')).to.equal(1);
+  });
+
+  it('deveria fazer a contagem da daily retornando 2, pois já foi chamado duas vezes', () => {
+    expect(addTaskTotal('daily')).to.equal(2);
+  });
+
+  it('deveria fazer a contagem da daily retornando 3, pois já foi chamado três vezes', () => {
+    expect(addTaskTotal('daily')).to.equal(3);
+  });
 });
