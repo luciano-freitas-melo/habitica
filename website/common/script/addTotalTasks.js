@@ -1,11 +1,11 @@
-export default function addTaskTotal (count, type) {
-    let totalTask = 0;
-  
-    if (count === 1 && type === 'task') {
-      totalTask = totalTask + 1;
-      return totalTask;
-    }
-    return 0;
+export default function addTaskTotal (type) {
+  let totalTask = 0;
+
+  if (type === 'task') {
+    totalTask += 1;
+    return totalTask;
   }
-  
-  addTaskTotal(1, 'task');
+  return 0;
+}
+
+addTaskTotal('task');
