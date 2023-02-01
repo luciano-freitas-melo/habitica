@@ -1,5 +1,6 @@
 let totalTask = 0;
 let totalHab = 0;
+let totalDai = 0;
 
 export default function addTaskTotal (type) {
   if (type === 'task') {
@@ -10,6 +11,11 @@ export default function addTaskTotal (type) {
   if (type === 'habit') {
     totalHab += 1;
     return totalHab;
+  }
+
+  if (type === 'daily') {
+    totalDai += 1;
+    return totalDai;
   }
 
   return 0;
