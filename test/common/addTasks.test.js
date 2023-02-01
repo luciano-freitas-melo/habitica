@@ -33,11 +33,11 @@ describe('contador de tarefas criadas', () => {
     expect(addTaskTotal('todo')).to.equal(2);
   });
 
-  it('deveria retorna -1, pois essa entrada não é válida', () => {
+  it('deveria retorna -1, pois essa entrada de string não é válida', () => {
     expect(addTaskTotal('ABC')).to.equal(-1);
   });
 
-  it('deveria retorna -1, pois essa entrada não é válida', () => {
+  it('deveria retorna -1, pois essa entrada de número não é válida', () => {
     expect(addTaskTotal(123)).to.equal(-1);
   });
 });
